@@ -22,7 +22,7 @@ const History = async (props: Props) => {
             <CardTitle className="text-2xl font-bold">History</CardTitle>
             <Link className={buttonVariants()} href="/dashboard">
               <LucideLayoutDashboard className="mr-2" />
-              Back to Dashboard
+              Torna alla Dashboard
             </Link>
           </div>
         </CardHeader>

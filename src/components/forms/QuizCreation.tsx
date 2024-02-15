@@ -105,13 +105,12 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
                 name="topic"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Topic</FormLabel>
+                    <FormLabel>Tema</FormLabel>
                     <FormControl>
                       <Input placeholder="Enter a topic" {...field} />
                     </FormControl>
                     <FormDescription>
-                      Please provide any topic you would like to be quizzed on
-                      here.
+                    Fornisci un argomento che vorresti testare.
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -122,7 +121,7 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
                 name="amount"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Number of Questions</FormLabel>
+                    <FormLabel>Numero di domande</FormLabel>
                     <FormControl>
                       <Input
                         placeholder="How many questions?"
@@ -136,8 +135,7 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
                       />
                     </FormControl>
                     <FormDescription>
-                      You can choose how many questions you would like to be
-                      quizzed on here.
+                    Scegli quante domande vuoi ti vengano fatte.
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -155,7 +153,7 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
                   }}
                   type="button"
                 >
-                  <CopyCheck className="w-4 h-4 mr-2" /> Multiple Choice
+                  <CopyCheck className="w-4 h-4 mr-2" /> Risposta Multipla
                 </Button>
                 <Separator orientation="vertical" />
                 <Button
@@ -168,11 +166,11 @@ const QuizCreation = ({ topic: topicParam }: Props) => {
                   onClick={() => form.setValue("type", "open_ended")}
                   type="button"
                 >
-                  <BookOpen className="w-4 h-4 mr-2" /> Open Ended
+                  <BookOpen className="w-4 h-4 mr-2" /> Domande Aperte
                 </Button>
               </div>
               <Button disabled={isLoading} type="submit">
-                Submit
+              Vai al Test!
               </Button>
             </form>
           </Form>

@@ -136,14 +136,14 @@ const MCQ = ({ game }: Props) => {
     return (
       <div className="absolute flex flex-col justify-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
         <div className="px-4 py-2 mt-2 font-semibold text-white bg-green-500 rounded-md whitespace-nowrap">
-          You Completed in{" "}
+        L'hai completato in{" "}
           {formatTimeDelta(differenceInSeconds(now, game.timeStarted))}
         </div>
         <Link
           href={`/statistics/${game.id}`}
           className={cn(buttonVariants({ size: "lg" }), "mt-2")}
         >
-          View Statistics
+          Guarda le statistiche
           <BarChart className="w-4 h-4 ml-2" />
         </Link>
       </div>
@@ -212,7 +212,7 @@ const MCQ = ({ game }: Props) => {
           }}
         >
           {isChecking && <Loader2 className="w-4 h-4 mr-2 animate-spin" />}
-          Next <ChevronRight className="w-4 h-4 ml-2" />
+          Avanti <ChevronRight className="w-4 h-4 ml-2" />
         </Button>
       </div>
     </div>

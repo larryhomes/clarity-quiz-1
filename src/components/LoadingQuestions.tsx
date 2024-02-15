@@ -5,11 +5,11 @@ import Image from "next/image";
 type Props = { finished: boolean };
 
 const loadingTexts = [
-  "Generating questions...",
-  "Unleashing the power of curiosity...",
-  "Diving deep into the ocean of questions..",
-  "Harnessing the collective knowledge of the cosmos...",
-  "Igniting the flame of wonder and exploration...",
+"Ripassa gli appunti quotidianamente per rafforzare la memoria...",
+"Imposta obiettivi di studio chiari per mantenere la motivazione...",
+"Alterna materie diverse per mantenere alta l'attenzione...",
+"Fai brevi pause per migliorare la concentrazione...",
+"Usa mappe concettuali per organizzare le idee...",
 ];
 
 const LoadingQuestions = ({ finished }: Props) => {
